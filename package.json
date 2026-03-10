@@ -1,0 +1,35 @@
+{
+  "name": "gmail-next",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "dev:core": "next dev -p 3000",
+    "dev:super-admin": "npm --prefix ./super-admin run dev",
+    "dev:all": "concurrently -n core,super-admin -c green,cyan \"npm run dev:core\" \"npm run dev:super-admin\"",
+    "build": "next build",
+    "build:super-admin": "npm --prefix ./super-admin run build",
+    "build:all": "npm run build && npm run build:super-admin",
+    "start": "next start",
+    "start:core": "next start -p 3000",
+    "start:super-admin": "npm --prefix ./super-admin run start",
+    "lint": "next lint",
+    "lint:super-admin": "npm --prefix ./super-admin run lint",
+    "lint:all": "npm run lint && npm run lint:super-admin"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.90.1",
+    "bootstrap": "^5.3.3",
+    "googleapis": "^166.0.0",
+    "next": "^14.2.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "concurrently": "^9.1.2",
+    "eslint": "^8.57.0",
+    "eslint-config-next": "^14.2.4",
+    "supabase": "^2.75.3"
+  }
+}
