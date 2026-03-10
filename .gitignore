@@ -1,0 +1,86 @@
+# Dependencies
+node_modules/
+/.pnp
+.pnp.js
+yarn.lock
+
+# Testing
+/coverage
+/.nyc_output
+
+# Next.js
+/.next/
+/out/
+.next/
+
+# Production
+/build
+/dist
+
+# Misc
+.DS_Store
+*.pem
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+lerna-debug.log*
+
+# Logs
+logs
+*.log
+
+# Environment variables (sensitive data)
+.env
+.env.local
+.env.production.local
+.env.development.local
+.env.test.local
+
+# Token and sensitive data
+token.json
+*.key
+*.pem
+*.crt
+
+# Data files (optional - uncomment if you want to exclude)
+# /data/
+# /data/aliases.json
+# /data/domains.json
+# /data/logs.json
+# /data/audit.json
+
+# OS files
+Thumbs.db
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Editor directories and files
+.history/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Turbopack
+.turbo/
+
+# Vercel
+.vercel
+
+# System
+.env.*.local
+config.local.*
